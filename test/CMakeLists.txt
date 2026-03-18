@@ -110,3 +110,7 @@ add_test_rd(abl-bndry-input abl-bndry-output)
 add_test_r(nalu-nalu-cylinder)
 add_test_r(nalu-nalu-cylinder-motion)
 add_test_re(stokes-waves-cylinder)
+
+if(NALU_USES_KYNEMA)
+  add_test_r(floating-block)
+endif()
